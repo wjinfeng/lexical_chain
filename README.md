@@ -19,8 +19,8 @@ from lexical_chain import EDU_level_LC
 
 en_edu_lc = EDU_level_LC(
     lang='en', 
-    distance=3, 
-    thre=0.33, 
+    distance=3,    // 两个存在词汇衔接的EDU之间的最大距离
+    thre=0.33,     // 判断两个词是否相似的阈值
     pos_list=['NN', 'NNP', 'NNS', 'NNPS'], 
     cilin_path=None)
 
@@ -36,8 +36,8 @@ print(en_lc_graph)
 
 zh_edu_lc = EDU_level_LC(
     lang='zh', 
-    distance=3, 
-    thre=0.6, 
+    distance=3,     // 两个存在词汇衔接的EDU之间的最大距离
+    thre=0.6,       // 判断两个词是否相似的阈值
     pos_list=['n', 'nr', 'ns', 'nt', 'nz'], 
     cilin_path='cilin.txt')
 
