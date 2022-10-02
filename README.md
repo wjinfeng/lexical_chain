@@ -14,7 +14,9 @@
 ## EDU Level Lexical Chain
 - 输入EDU/句子的list
 - 返回邻接矩阵，1表示两个EDU/句子之间存在词汇衔接，0表示不存在
-```
+```python
+from lexical_chain import EDU_level_LC
+
 en_edu_lc = EDU_level_LC(
     lang='en', 
     distance=3, 
@@ -52,7 +54,9 @@ print(zh_lc_graph)
 ## Word Level Lexical Chain
 - 输入text
 - 输出词汇链
-```
+```python
+from lexical_chain import lexical_chain
+
 en_lc = lexical_chain(
     lang='en',
     pos_list=['NN', 'NNS', 'NNP', 'NNPS'],
